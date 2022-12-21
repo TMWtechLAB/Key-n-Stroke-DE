@@ -17,10 +17,10 @@ namespace KeyNStroke
                     return "⇧";
                 case Key.LeftCtrl:
                 case Key.RightCtrl:
-                    return "Ctrl";
+                    return "Strg";
                 case Key.LWin:
                 case Key.RWin:
-                    return "Win";
+                    return "⊞ Win";
                 case Key.LeftAlt:
                 case Key.RightAlt:
                     return "Alt";
@@ -42,17 +42,17 @@ namespace KeyNStroke
                 case Key.Escape:
                     return " [Esc] ";
                 case Key.PrintScreen:
-                    return " [Print] ";
+                    return " [Druck] ";
                 case Key.Pause:
                     return " [Pause] ";
                 case Key.Insert:
-                    return " [Insert] ";
+                    return " [Einfg] ";
                 case Key.Delete:
-                    return " [Delete] ";
+                    return " [Entf] ";
 
 
                 case Key.Tab:
-                    return "↹";
+                    return " Tab ↹";
                 case Key.Space:
                     return "␣";
                 case Key.PageUp: 
@@ -64,7 +64,7 @@ namespace KeyNStroke
                 case Key.Home:
                     return " ⇱ ";
                 case Key.Print:
-                    return " ⎙ ";
+                    return " Druck ⎙ ";
 
                 case Key.Clear:
                 case Key.ImeProcessed:
@@ -110,7 +110,7 @@ namespace KeyNStroke
                 case Key.Add:
                     return "+";
                 case Key.Separator:
-                    return " [Seperator] ";
+                    return " [Seperator |] ";
                 case Key.Subtract:
                 case Key.OemMinus:
                     return "-";
