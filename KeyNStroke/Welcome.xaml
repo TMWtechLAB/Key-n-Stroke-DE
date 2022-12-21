@@ -20,7 +20,7 @@
         <StackPanel Margin="10,10,-0.333,163.333">
             <TextBlock TextWrapping="Wrap">
                 <Span FontSize="24">
-                    <Run Text="Welcome to Key'n'Strokes " /><Run x:Name="VersionInfo" />
+                    <Run Text="Welcome to Key'n'Strokes techLAB Edition" /><Run x:Name="VersionInfo" />
                 </Span>
                 <LineBreak />
                 <Span FontSize="24"><Run /></Span>
