@@ -114,5 +114,6 @@ namespace KeyNStroke
         {
             ((App)Application.Current).showSettingsWindow();
         }
+
     }
 }

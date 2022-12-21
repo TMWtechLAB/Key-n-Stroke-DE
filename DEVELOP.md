@@ -25,7 +25,7 @@ This is a little documentation about how the source code is organized and works
 
 The main function is found in Program.cs.
 
-It initializes the classes decribed below.
+It initializes the classes decribed below.fsdjflksjdf
  * new KeyboardHook()
  * new KeystrokeParser()
  * new SettingsStore()

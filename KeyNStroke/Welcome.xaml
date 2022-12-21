@@ -20,7 +20,7 @@
         <StackPanel Margin="10,10,-0.333,163.333">
             <TextBlock TextWrapping="Wrap">
                 <Span FontSize="24">
-                    <Run Text="Welcome to Key'n'Strokes techLAB Edition" /><Run x:Name="VersionInfo" />
+                    <Run Text="Welcome to Key'n'Strokes (techLAB Edition) " /><Run x:Name="VersionInfo" />
                 </Span>
                 <LineBreak />
                 <Span FontSize="24"><Run /></Span>
@@ -37,6 +37,7 @@
                 <LineBreak />
                 <Run Text="Press " /><Span FontWeight="Bold"><Run Text="{Binding StandbyShortcut, Mode=OneWay}" /></Span><Run Text=" to toggle standby mode." />
             </TextBlock>
+			
             <TextBlock Visibility="{Binding EnableKeystrokeHistory, Converter={StaticResource BooleanToVisibilityConverter}}">
                 <Run Text="Press " /><Span FontWeight="Bold"><Run Text="{Binding KeystrokeHistorySettingsModeShortcut, Mode=OneWay}" /></Span><Run Text=" to move the keystroke history window." />
                 <LineBreak />
@@ -46,10 +47,18 @@
                 <Run Text="Press " /><Span FontWeight="Bold"><Run Text="{Binding AnnotateLineShortcut, Mode=OneWay}" /></Span><Run Text=" to draw a line." />
             </TextBlock>
         </StackPanel>
+		<Button x:Name="ButtonSettings"
+                Content="Settings"
+                HorizontalAlignment="Left"
+                Margin="10,0,0,10.333"
+                Click="ButtonSettings_Click"
+                Width="90"
+                Height="24"
+                VerticalAlignment="Bottom" />
         <Button x:Name="ButtonCheckForUpdates"
                 Content="Check for Updates"
                 HorizontalAlignment="Left"
-                Margin="10,0,0,10.333"
+                Margin="110,0,0,10.333"
                 VerticalAlignment="Bottom"
                 Width="129"
                 Height="24" />
