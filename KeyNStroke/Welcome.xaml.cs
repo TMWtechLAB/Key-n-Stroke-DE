@@ -22,10 +22,6 @@ namespace KeyNStroke
 
             Updater.Updater.Instance.OnUiUpdate += Updater_onUIUpdate;
             Updater.Updater.Instance.OnShutdownRequest += Updater_onShutdownRequest;
-            ButtonCheckForUpdates.Click += Updater.Updater.Instance.UiButton_Click;
-
-            Version current = Assembly.GetExecutingAssembly().GetName().Version;
-            VersionInfo.Text = current.ToString(3);
 
         }
 
@@ -60,8 +56,6 @@ namespace KeyNStroke
         {
             this.Dispatcher.InvokeAsync(() =>
             {
-                ButtonCheckForUpdates.Content = e.buttonText;
-                ButtonCheckForUpdates.IsEnabled = e.buttonEnabled;
                 TextUpdateStatus.Inlines.Clear();
                 if (e.details != null && e.details.Count > 0)
                 {

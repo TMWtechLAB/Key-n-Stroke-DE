@@ -20,7 +20,7 @@
         <StackPanel Margin="10,10,-0.333,163.333">
             <TextBlock TextWrapping="Wrap">
                 <Span FontSize="24">
-                    <Run Text="Welcome to Key'n'Strokes (techLAB Edition) " /><Run x:Name="VersionInfo" />
+                    <Run Text="Welcome to Key'n'Strokes (techLAB Edition) v1.1.1" />
                 </Span>
                 <LineBreak />
                 <Span FontSize="24"><Run /></Span>
@@ -55,13 +55,6 @@
                 Width="90"
                 Height="24"
                 VerticalAlignment="Bottom" />
-        <Button x:Name="ButtonCheckForUpdates"
-                Content="Check for Updates"
-                HorizontalAlignment="Left"
-                Margin="110,0,0,10.333"
-                VerticalAlignment="Bottom"
-                Width="129"
-                Height="24" />
         <TextBlock Margin="10,299,-0.333,52.333"
                    TextWrapping="Wrap">
             <Hyperlink RequestNavigate="Hyperlink_RequestNavigate_README"
